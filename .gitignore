@@ -1,0 +1,10 @@
+# Ambiente Virtual
+venv/
+__pycache__/
+
+# Arquivos do sistema
+.idea/
+*.pyc
+
+# Arquivos sensíveis (se houver)
+*.env
