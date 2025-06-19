@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 from datetime import datetime
 import logging
@@ -5,7 +6,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # --- CONFIGURAÇÕES E VARIÁVEIS GLOBAIS ---
-TOKEN = "7945098686:AAGfSsFdXOFpdQLzqgdAo8CYAHWdVsfp-4Q"  # <-- COLOQUE SEU NOVO E VÁLIDO TOKEN AQUI
+TOKEN = os.getenv("TELEGRAM_TOKEN") 
 NOME_ARQUIVO_EXCEL = "Faturamento_2020a2024_SternaMDF.xlsx" # <- Verifique se o nome bate com o seu
 NOME_COLUNA_DATA = "Dia"
 
